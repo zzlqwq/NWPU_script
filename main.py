@@ -3,13 +3,15 @@ import time
 
 
 def open_browser():
+    option = webdriver.ChromeOptions()
+    option.add_argument('headless')
     # global browser
-    browser = webdriver.Chrome("C:\\Users\\11706\\Desktop\\chromedriver.exe")  # 设置Chrome为selenium的浏览器驱动
+    browser = webdriver.Chrome("C:\\Users\\11706\\Desktop\\chromedriver.exe", options=option)  # 设置Chrome为selenium的浏览器驱动
     browser.get("https://uis.nwpu.edu.cn/cas/login")
     browser.maximize_window()
     browser.implicitly_wait(10)
-    username = "username"
-    password = "password"
+    username = "2019300397"
+    password = "..."
 
     browser.find_element_by_id("username").send_keys(username)
     browser.find_element_by_id("password").send_keys(password)
