@@ -1,4 +1,3 @@
-# check_in_script
-npu check in script
-
-you must choose a webdriver that suitable with your web browser
+# 注意事项
+1. 该脚本需要安装浏览器驱动,为了省事起见使用了selenium实现该功能
+2. 运行该脚本时记得修改代码中的password
